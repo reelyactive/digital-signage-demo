@@ -37,6 +37,21 @@ Then open index.html in your favourite web browser.  You should see a picture of
 Enabled/disable anonymous detection within reelyApp for iOS and Android to test all four cases, and watch how the webpage responds.
 
 
+Hacking the demo
+----------------
+
+Substitute your own images:
+- copy them to the /images folder
+- update the _Constant definitions_ in js/digitalsignage.js
+
+Trigger based on other UUIDs (ex: FitBit):
+- update the UUID_ANDROID and UUID_IOS _Constant definitions_ in js/digitalsignage.js
+
+Experiment with the responsivity:
+- tweak the [barnowl advanced parameters](https://www.npmjs.com/package/barnowl#advanced-parameters) in server.js
+- tweak the [barnacles options](https://www.npmjs.com/package/barnacles#options) in server.js
+
+
 License
 -------
 
