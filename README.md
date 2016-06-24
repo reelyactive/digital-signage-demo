@@ -6,6 +6,7 @@ Real-time presence-triggered content
 ------------------------------------
 
 Change the content of a webpage based on the presence or absence of mobile devices running reelyApp.  There are four options:
+
 1. No devices running reelyApp are present
 2. One or more iOS devices running reelyApp are present
 3. One or more Android devices running reelyApp are present
@@ -15,37 +16,23 @@ Change the content of a webpage based on the presence or absence of mobile devic
 Installation
 ------------
 
-Clone the repo.
+Clone the repo, then install the necessary packages for Node.js by running:
+
+    npm install
+
+Install reelyApp for [Android](https://play.google.com/store/apps/details?id=com.reelyactive.reelyapp) and [iOS](https://itunes.apple.com/us/app/reelyapp-for-ios/id1121042765).
 
 
 Running the demo
 ----------------
 
-In the directory of the cloned repo install barnowl and barnacles as follows:
+With a [minimal starter kit](http://shop.reelyactive.com/products/starterkit-min) connected to your computer (or to the digital signage computer), from the root of the repo, run the server as follows:
 
-    npm install barnowl
-    npm install barnacles
+    node server
 
-With a [minimal starter kit](http://shop.reelyactive.com/products/starterkit-min) connected to your computer (or to the digital signage computer), in the same directory, run the following code:
+Then open index.html in your favourite web browser.  You should see a picture of a stuffed barnowl.
 
-```javascript
-var barnowl = require('barnowl');
-var barnacles = require('barnacles');
-
-var middleware = new barnowl( { enableMixing: true } );
-var notifications = new barnacles( { disappearanceMilliseconds: 5000 } );
-
-middleware.bind( { protocol: 'serial', path: 'auto' } );
-notifications.bind( { barnowl: middleware } );
-
-notifications.addService({
-    service: "websocket",
-    namespace: "/demo",
-    ignoreInfrastructureTx: true
-});
-```
-
-Then open index.html in your favourite browser.  Enabled/disable anonymous detection within reelyApp for iOS and Android to test all four cases, and watch how the webpage responds.
+Enabled/disable anonymous detection within reelyApp for iOS and Android to test all four cases, and watch how the webpage responds.
 
 
 License

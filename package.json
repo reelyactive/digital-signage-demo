@@ -1,0 +1,28 @@
+{
+  "name": "digital-signage-demo",
+  "homepage": "https://github.com/reelyactive/digital-signage-demo/",
+  "author": "reelyActive <webdev@reelyactive.com>",
+  "description": "Presence-triggered digital signage demo compatible with reelyApp.  We believe in an open Internet of Things.",
+  "keywords": [
+    "reelyActive",
+    "reelyApp",
+    "digital signage",
+    "presence detection",
+    "Android",
+    "iOS"
+  ],
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reelyactive/digital-signage-demo.git"
+  },
+  "dependencies": {
+    "barnowl": ">=0.4.19",
+    "serialport": ">=2.0.6",
+    "barnacles": ">=0.3.7"
+  },
+  "contributors": [
+    { "name": "Jeffrey Dungen" }
+  ],
+  "license": "MIT"
+}
