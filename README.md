@@ -12,6 +12,8 @@ Change the content of a webpage based on the presence or absence of mobile devic
 3. One or more Android devices running reelyApp are present
 4. Both iOS and Android devices running reelyApp are present
 
+![digital-signage-demo](http://reelyactive.com/images/digital-signage-demo.gif)
+
 
 Installation
 ------------
